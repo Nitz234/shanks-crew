@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 0px 2px 1px gray
+}
+
+.primary, .secondary{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.search-icon{
+    background-image: url(https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png);
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    margin: 5px;
+    display: none;
+}
+
+.channel{
+    background-image: url(https://placehold.co/250x35);
+    width: 250px;
+    height: 35px;
+    background-size: 100% 100%;
+}
+
+.main{
+    display: flex;
+}
+
+.carousel{
+    background-color: gray;
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+.stream{
+    background-image: url(https://placehold.co/350x200);
+    width: 350px;
+    height: 200px;
+    background-size: 100% 100%;
+    margin: 5px;
+}
+
+.live{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sidebar{
+    background-color: darkgray;
+}
+
+.channels-icon{
+    background-image: url(https://static.thenounproject.com/png/5123050-200.png);
+    width: 35px;
+    height: 35px;
+    background-size: 100% 100%;
+    display: none;
+}
+
+@media screen and (max-width:1200px){
+    .channel{
+        background-image: url(https://placehold.co/35x35);
+        width: 35px;
+    }
+
+    .channels{
+        display: none;
+    }
+
+    .channels-icon{
+        display: flex ;
+    }
+
+    .live-channels{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .searchbar{
+        display: none;
+    }
+
+    .search-icon{
+        display: flex;
+    }
+}
+
+
